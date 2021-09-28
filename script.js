@@ -12,7 +12,7 @@ const validateInputs = () => {
     if(initPriceNum >= 1 && currPirceNum >= 1 && stockQtyNum >= 1){
         calculateProfitLoss(initPriceNum,currPirceNum,stockQtyNum)
     }else{
-        showOutput("Entries shold be greater than 0")
+        showOutput("Entries should be greater than 0")
     }
 }
 
