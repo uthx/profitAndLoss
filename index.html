@@ -8,8 +8,9 @@
     <title>Stock Profit and Loss Calulator</title>
 </head>
 <body>
-    <h1>Stock Profit and Loss Calculator</h1>
-    <main>
+    <main class="container">
+    <h1 class="heading">Stock Profit and Loss Calculator</h1>
+
             <label for="initial-price">
                 Initial Price
                 <input type="number" name="" id="initial-price" placeholder="Enter Initial price" required>
@@ -23,9 +24,17 @@
                 Quantity of Stocks 
                 <input type="number" name="" id="stock-quantity" placeholder="Enter Stock Quantity" min="1" required>
             </label>
-            <input type="submit" id="calculate" value="Calculate">
-            <div id="output-box"></div>
+            <button id="calculate">Calculate</button>
+        <div id="output-box"></div>
         </main>
+        <footer class="footer">
+            <p>Created by Rahul Dhiman and and inspired by Adarsh Balika's Project</p>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="https://github.com/uthx">Github</a></li>
+                <li class="footer-list-item"><a href="/">Twitter (Need to make an account)</a></li>
+                <li class="footer-list-item"><a href="https://www.linkedin.com/in/rahul-dhiman-4312601ab/">LinkedIn</a></li>
+            </ul>
+        </footer>
         <script src="script.js"></script>
 </body>
 </html>

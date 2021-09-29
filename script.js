@@ -22,17 +22,11 @@ const calculateProfitLoss = (costPrice,sellingPrice,quantity) => {
     
     if(sellingPrice > costPrice){
         let profit = sellingPrice - costPrice;
-        let profitPercentage = (profit * 100)/costPrice;
-        console.log("Profit on 1 qty => ",profit);
-        console.log("Overall Profit => ",profit * quantity)
-        console.log("Profit Percentage => ",profitPercentage)
+        let profitPercentage = ((profit * 100)/costPrice).toFixed(2);
         showOutput(`Profit is ${profit * quantity} and Profit Percentage is ${profitPercentage}%`)
     }else if(costPrice > sellingPrice) {
         let loss = costPrice - sellingPrice;
-        let lossPercentage = (loss * 100)/costPrice;
-        console.log("loss on 1 qty => ",loss);
-        console.log("Overall loss => ",loss * quantity)
-        console.log("loss Percentage => ",lossPercentage)
+        let lossPercentage = ((loss * 100)/costPrice).toFixed(2);
         showOutput(`Loss is ${loss * quantity} and Loss Percentage is ${lossPercentage}%`)
     }else {
         showOutput("Your Portfolio is better still better than mine, Yeah you're not into loss 😒 \n Now Go Celebrate🥳")
